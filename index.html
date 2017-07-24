@@ -2,241 +2,219 @@
 <html>
 
 	<head>
-		<title>Test Document</title>
+		<title>Best Places of Evanston</title>
 		<style>	
-			h1 {
-			    display: block;
-			    font-size: 2em;
-			    font-weight: bold;
+			.category {
+				max-width: 1000px;
+				margin: auto;
+			/* 	outline: 2px solid orange; */
+				background: #eaebeb;
+				color: black;
+				font-family:'Open Sans';
+				font-size: 20px;	
+			}
+
+			.place {
+			/* 	outline: 2px solid green; */
+				margin: 0 0 15px 0;
+			}
+
+			.header {
+				display:flex;
+			}
+
+			.name {
+				margin:0 0 0 10px;
+			}
+
+			.left {
+				width: 40%;
+			/* 	outline: 2px solid blue; */
+				margin: 10px 0px 0px 0px;
+			}
+
+			.image {
+				height: 300px;
+			}
+
+			.real_image {
+				max-width: 100%;
+				minimum-width: 90%;
+
+			}
+			.quote {
+			/* 	outline: 2px solid #ada1ce; */
+				margin: 20px 40px 0 50px;
+				background: #c7c0de
+
+			}
+
+			.quote_text {
+				margin:0 0 0 0;
+				color: black;
 				text-align:center;
 			}
-			
-			p {
+
+			.right {
+				width: 60%;
+			/* 	outline: 2px solid red; */
+				margin: 10px 0 0 0;
+			} 
+			.content {
+				display: flex;
+				margin: 0px 10px 0 10px;
+			}
+
+			.description {
+			/* 	outline: 2px solid yellow; */
+				margin: 0 15px 0 25px;
+			}
+
+			.walktime {
+			/* 	outline: 2px solid black; */
+				border: 0 0 0 0;
+			}
+
+
+
+			.category_title {
+				margin: 29.5px 0 0 0;
+			}
+
+
+
+			--------------------------
+
+
+
+			.place2 {
+			/* 	outline: 2px solid green; */
+				margin: 0 0 15px 0;
+			}
+
+			.header2 {
+				display:flex;
+			}
+
+			.name2 {
+				margin:0 0 0 10px;
+			}
+
+			.left2 {
+				width: 60%;
+			/* 	outline: 2px solid blue; */
+				margin: 10px 0px 0px 0px;
+			}
+
+			.image2 {
+				height: 300px;
+			}
+
+			.real_image2 {
+				max-width: 100%;
+				minimum-width: 90%;
+
+			}
+			.quote2 {
+			/* 	outline: 2px solid #ada1ce; */
+				margin: 20px 40px 0 50px;
+				background: #c7c0de
+
+			}
+
+			.quote_text2 {
+				margin:0 0 0 0;
+				color: black;
 				text-align:center;
 			}
-			*
-			{
-			margin:0px;
-			padding:0px;
-			}
 
-			body{
-			background:#fff;
-			position:relative;
-			padding:50px 0px 0px 0px;
+			.right2 {
+				width: 40%;
+			/* 	outline: 2px solid red; */
+				margin: 10px 0 0 0;
 			} 
-
-			#dog
-			{
-			width:15px;
-			height:15px;
-			background:#000;
-			position:relative;
-			margin-left:40% ;
-			box-shadow:
-			/* nose line */
-			15px 0px 0px #dadada,
-			30px 0px 0px #dadada,
-			45px 0px 0px #c0915f,
-			60px 0px 0px #000,
-			75px 0px 0px #c0915f,
-			90px 0px 0px #c0915f,
-			105px 0px 0px #c0915f,
-
-			/* top head */
-			60px -15px 0px #c0915f,
-			75px -15px 0px #c0915f,
-			90px -15px 0px #c0915f,
-			/* 2nd line */
-			15px 15px 0px #dadada,
-			30px 15px 0px #dadada,
-			45px 15px 0px #c0915f,
-			60px 15px 0px #c0915f,
-			75px 15px 0px #c0915f,
-			90px 15px 0px #c0915f,
-			105px 15px 0px #c0915f,
-			/* 3nd line */
-			15px 30px 0px #dadada,
-			30px 30px 0px #dadada,
-			45px 30px 0px #957049,
-			60px 30px 0px #c0915f,
-			75px 30px 0px #c0915f,
-			90px 30px 0px #c0915f,
-			105px 30px 0px #c0915f,
-			120px 30px 0px #c0915f,
-			/* 4th line */
-			30px 45px 0px #ffafaf,
-			60px 45px 0px #c0915f,
-			75px 45px 0px #c0915f,
-			90px 45px 0px #c0915f,
-			105px 45px 0px #957049,
-			120px 45px 0px #c0915f,
-			135px 45px 0px #3e2811,
-			150px 45px 0px #3e2811,
-			165px 45px 0px #dadada,
-			180px 45px 0px #dadada,
-			195px 45px 0px #c0915f,
-			210px 45px 0px #c0915f,
-			225px 45px 0px #dadada,
-			240px 45px 0px #c0915f,
-			255px 45px 0px #c0915f,
-			270px 45px 0px #c0915f,
-			285px 45px 0px #dadada,
-			300px 45px 0px #c0915f,
-			/* tail */
-			315px 30px 0px #c0915f,
-			315px 15px 0px #c0915f,
-			315px 0px 0px #c0915f,
-			315px -15px 0px #dadada,
-			/* 6th line */
-			60px 60px 0px #c0915f,
-			75px 60px 0px #c0915f,
-			90px 60px 0px #c0915f,
-			105px 60px 0px #957049,
-			120px 60px 0px #3e2811,
-			135px 60px 0px #3e2811,
-			150px 60px 0px #c0915f,
-			165px 60px 0px #dadada,
-			180px 60px 0px #c0915f,
-			195px 60px 0px #3e2811,
-			210px 60px 0px #c0915f,
-			225px 60px 0px #dadada,
-			240px 60px 0px #3e2811,
-			255px 60px 0px #3e2811,
-			270px 60px 0px #3e2811,
-			285px 60px 0px #c0915f,
-			/* 7th line */
-			75px 75px 0px #dadada,
-			90px 75px 0px #957049,
-			105px 75px 0px #c0915f,
-			120px 75px 0px #c0915f,
-			135px 75px 0px #c0915f,
-			150px 75px 0px #dadada,
-			165px 75px 0px #dadada,
-			180px 75px 0px #dadada,
-			195px 75px 0px #dadada,
-			210px 75px 0px #dadada,
-			225px 75px 0px #dadada,
-			240px 75px 0px #dadada,
-			255px 75px 0px #3e2811,
-			270px 75px 0px #3e2811,
-			285px 75px 0px #c0915f,
-			/* 8th line */
-			90px 90px 0px #dadada,
-			105px 90px 0px #dadada,
-			120px 90px 0px #dadada,
-			135px 90px 0px #dadada,
-			150px 90px 0px #dadada,
-			165px 90px 0px #dadada,
-			180px 90px 0px #dadada,
-			195px 90px 0px #dadada,
-			210px 90px 0px #c0915f,
-			225px 90px 0px #3e2811,
-			240px 90px 0px #c0915f,
-			255px 90px 0px #c0915f,
-			270px 90px 0px #c0915f,
-			285px 90px 0px #c0915f,
-			/* 9th line */
-			105px 105px 0px #dadada,
-			120px 105px 0px #dadada,
-			135px 105px 0px #c0915f,
-			150px 105px 0px #dadada,
-			165px 105px 0px #dadada,
-			180px 105px 0px #dadada,
-			195px 105px 0px #c0915f,
-			210px 105px 0px #c0915f,
-			225px 105px 0px #c0915f,
-			240px 105px 0px #c0915f,
-			255px 105px 0px #c0915f,
-			270px 105px 0px #c0915f,
-			285px 105px 0px #c0915f,
-			/* Legs */
-			135px 120px 0px #dadada,
-			150px 120px 0px #dadada,
-			285px 120px 0px #c0915f,
-			120px 135px 0px #dadada,
-			270px 135px 0px #c0915f,
-			/* Droped water */
-			15px 135px 0px #b6e7ff,
-			30px 135px 0px #b6e7ff,
-			45px 135px 0px #b6e7ff
-			;
+			.content2 {
+				display: flex;
+				margin: 0px 10px 0 10px;
 			}
 
-			#dog:after
-			{
-			content:"";
-			width:15px;
-			height:15px;
-			position:absolute;
-			background:#b6e7ff;
-			left:30px;
-			top:45px;
-			z-index:-1;
-			-webkit-animation:drop 1s infinite;
-			-moz-animation:drop 1s infinite;
-			-ms-animation:drop 1s infinite;
-			-o-animation:drop 1s infinite;
-			animation:drop 1s infinite;
+			.description2 {
+			/* 	outline: 2px solid yellow; */
+				margin: 0 15px 0 25px;
 			}
 
-			@-webkit-keyframes drop
-			{
-			0%{top:45px;background:#b6e7ff;}
-			80%{background:#b6e7ff;z-index:1;}
-			90%{background:#85d6fe;z-index:1;}
-			100%{top:135px;background:#85d6fe;z-index:1;}
+			.walktime2 {
+			/* 	outline: 2px solid black; */
+				border: 0 0 0 0;
 			}
 
-			@-moz-keyframes drop
-			{
-			0%{top:45px;background:#b6e7ff;}
-			80%{background:#b6e7ff;z-index:1;}
-			90%{background:#85d6fe;z-index:1;}
-			100%{top:135px;background:#85d6fe;z-index:1;}
-			}
-
-			@-ms-keyframes drop
-			{
-			0%{top:45px;background:#b6e7ff;}
-			80%{background:#b6e7ff;z-index:1;}
-			90%{background:#85d6fe;z-index:1;}
-			100%{top:135px;background:#85d6fe;z-index:1;}
-			}
-
-			@-o-keyframes drop
-			{
-			0%{top:45px;background:#b6e7ff;}
-			80%{background:#b6e7ff;z-index:1;}
-			90%{background:#85d6fe;z-index:1;}
-			100%{top:135px;background:#85d6fe;z-index:1;}
-			} 
-
-			@keyframes drop
-			{
-			0%{top:45px;background:#b6e7ff;}
-			80%{background:#b6e7ff;z-index:1;}
-			90%{background:#85d6fe;z-index:1;}
-			100%{top:135px;background:#85d6fe;z-index:1;}
-			}
 			
 		</style>
 	</head>
 	
 	<body>
-    	<h1>Hello World!</h1>
-		<p>We will be responsible for the interactive aspect of the new Cherubs website.</p>
-		<p></p>
-		<p></p>
-		<div id="dog"></div>
-		<p></p>
-		<p></p>
-		<p></p>
-		<p></p>
-		<img src="http://www.vanishingtattoo.com/tds/images/cherub/cherub_large/cherub_004.jpg" style="height:250px; width:450px;">
-	
-		<script>
-		</script>
+    		
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+		<h1 align=center>Downtown Evanston</h1>
+		<p align=center> Click on the dots to find out more about Cherubs' favorite restaurants, cafes, breakfast spots, dessert shops, and book stores in downtown Evanston. </p>
+
+		<div class="category">
+			<h1 align=center class="category_title">DESSERTS </h1>
+		    <div class="place">
+			<div class="header">
+					<div class="header_number">
+						1
+					</div>
+					<h3 class="name">Andy's Frozen Custard</h3>
+				</div>
+				<div class="content">
+					<div class="left">
+						<div class="image">
+							<img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/SollenbergerUSEDBYPrice-1025x769.jpg">
+						</div>
+						<div class="walktime">
+							<p>
+								Walk time: 10 minutes
+							</p>
+						</div>
+					</div>
+					<div class="right">
+						<p class="description"> Andy’s is the largest dessert-only franchise in the world. Andy’s famous frozen custard, which is creamier than ice cream and freshly produced by the hour, has been served since 1986. Alongside the classic chocolate and vanilla favorites, Andy’s also serves specialty options such as the Straw-Ana Sundae, Ozark Turtle, and the Triple Chocolate Concrete. The Evanston Andy’s location is the Cherubs go-to for Saturday late-night bites. </p>
+						<div class="quote">
+							<p class="quote_text"><i> “I like Andy’s because it’s a good meeting place where everyone can hang out and get relatively cheap ice cream. I think it tastes better than anything where I live.” </i>- <b>Olivia Cohen, Chapel Hill </b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="place2">
+			<div class="header2">
+					<div class="header_number2">
+						2
+					</div>
+					<h3 class="name2">Insomnia Cookies</h3>
+				</div>
+				<div class="content2">
+					<div class="left2">
+						<p class="description2"> Andy’s is the largest dessert-only franchise in the world. Andy’s famous frozen custard, which is creamier than ice cream and freshly produced by the hour, has been served since 1986. Alongside the classic chocolate and vanilla favorites, Andy’s also serves specialty options such as the Straw-Ana Sundae, Ozark Turtle, and the Triple Chocolate Concrete. The Evanston Andy’s location is the Cherubs go-to for Saturday late-night bites. </p>
+						<div class="quote2">
+							<p class="quote_text2"> <i>“I like Andy’s because it’s a good meeting place where everyone can hang out and get relatively cheap ice cream. I think it tastes better than anything where I live.” </i>- <b>Olivia Cohen, Chapel Hill </b></p>
+						</div>
+					</div>
+					<div class="right2">
+						<div class="image2">
+							<img class="real_image2" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/SollenbergerUSEDBYPrice-1025x769.jpg">
+							<div class="walktime">
+							<p>
+								Walk time: 10 minutes
+							</p>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</body>
 	
 </html>
