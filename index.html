@@ -4,27 +4,144 @@
 	<head>
 		<title>Best Places of Evanston</title>
 		<style>	
-			.category {
+			.headline {
+	font-family: 'open sans';
+	font-size: 45px;
+}
+
+.blurb {
+	font-family: 'open sans';
+	font-size: 20px;
+}
+
+.category {
 	max-width: 1000px;
 	margin: auto;
-/* 	outline: 2px solid orange; */
-	background: #eaebeb;
+	padding: 0 0 1px 0;
+	background: #f9f9f9;
 	color: black;
 	font-family:'Open Sans';
 	font-size: 20px;	
 }
 
+.category_title {
+	margin: 29.5px 0 15px 0;
+	padding: 10px 0 5px 0;
+}
+
 .place {
-/* 	outline: 2px solid green; */
-	margin: 0 0 15px 0;
+	margin: 0 25px 60px 25px;
 }
 
 .header {
 	display:flex;
+	padding: 0 0 5px 0;
 }
 
 .name {
-	margin:0 0 0 10px;
+	margin:0 10px 0 10px;
+	font-size: 140%;
+}
+
+.circle_restaurant {
+  background-color: #c2185b;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid white;
+  text-align: center;
+  padding-top: 4px;
+  box-sizing:border-box;
+  color: white;
+  min-width:42px;
+}
+
+.circle_dessert {
+  background-color: #01579b;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid white;
+  text-align: center;
+  padding-top: 4px;
+  box-sizing:border-box;
+  color: white;
+  min-width:42px;
+}
+
+.circle_cafe {
+  background-color: #7cb342;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid white;
+  text-align: center;
+  padding-top: 4px;
+  box-sizing:border-box;
+  color: white;
+  min-width:42px;
+}
+
+.circle_breakfast {
+  background-color: #e65100;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid white;
+  text-align: center;
+  padding-top: 4px;
+  box-sizing:border-box;
+  color: white;
+  min-width:42px;
+}
+
+.duration_restaurant {
+ display:flex;
+ background:#C2185B;
+ max-width:100px;
+ padding:6px 10px 6px 10px;
+ min-width: 100px;
+/*  flex-wrap: wrap; */
+}
+
+.duration_dessert {
+ display:flex;
+ background:#01579B;
+ max-width:100px;
+ padding:6px 10px 6px 10px;
+ min-width: 100px;
+}
+
+.duration_cafe {
+ display:flex;
+ background:#7CB342;
+ max-width:100px;
+ padding:6px 10px 6px 10px;
+ min-width: 100px;
+}
+
+.duration_breakfast {
+ display:flex;
+ background:#E65100;
+ max-width:100px;
+ padding:6px 10px 6px 10px;
+ min-width: 100px;
+}
+
+.walk_time {
+  margin:auto;
+  color:white;
+  Padding: 0 0 0 10px;
+  font-size: 80%
+}
+
+.grouped {
+	display:flex;
+/* 	margin: 0 0 8px 0; */
+}
+
+.attribution {
+	font-size: 14px;
 }
 
 .left {
@@ -34,7 +151,7 @@
 }
 
 .image {
-	height: 300px;
+/* 	height: 300px; */
 }
 
 .real_image {
@@ -42,54 +159,66 @@
 	minimum-width: 90%;
 	
 }
+
 .quote {
-/* 	outline: 2px solid #ada1ce; */
 	margin: 20px 40px 0 50px;
-	background: #c7c0de;
+	background: #ece7fa;
 	padding: 25px;
-	
 }
+
+.quote_breakfast {
+	margin: 20px 40px 0 50px;
+	background: #ffe1d1;
+	padding: 25px;
+}
+
+.quote_cafe {
+	margin: 20px 40px 0 50px;
+	background: #e9f9d8;
+	padding: 25px;
+}
+
+.quote_dessert {
+	margin: 20px 40px 0 50px;
+	background: #dff1ff;
+	padding: 25px;
+}
+
+.quote_restaurant {
+	margin: 20px 40px 0 50px;
+	background: #ffe6f0;
+	padding: 25px;
+}
+
+
 
 .quote_text {
 	margin: 0;
 	color: black;
 	text-align:center;
-	
 }
 
 .right {
 	width: 60%;
 /* 	outline: 2px solid red; */
-	margin: 10px 0 0 0;
+	margin: 10px 0 0 40px;
 } 
 .content {
 	display: flex;
-	margin: 0px 10px 0 0px;
+	margin: 0px 0px 0 0px;
 }
 
 .description {
 /* 	outline: 2px solid yellow; */
-	margin: 0 15px 0 25px;
-}
-
-.walktime {
-/* 	outline: 2px solid black; */
-	border: 0 0 0 0;
-}
-
-
-
-.category_title {
-	margin: 29.5px 0 0 0;
+	margin: 0 0 0 0;
 }
 
 
 .left2 {
 	width: 60%;
 /* 	outline: 2px solid blue; */
-	margin: 10px 0px 0px 0px;
+	margin: 10px 40px 0px 0px;
 }
-
 
 .right2 {
 	width: 40%;
@@ -97,72 +226,382 @@
 	margin: 10px 0 0 0;
 } 
 
-
+@media only screen and (max-width: 600px) {
+    .content {
+        display:flex;
+	   flex-wrap:wrap;
+    }
+	.left2 {
+		width: 100%;
+		order:2;
+		margin-right:0;
+	}
+	.left {
+		width: 100%;
+	}
+	.right {
+		width: 100%;
+		margin-left:0;
+	}
+	.right2 {
+		width: 100%;
+/* 		order:1; */
+	}
+	.quote_restaurant {
+		margin:15px 0 0 0;
+	}
+	
+	.quote_dessert {
+		margin:15px 0 0 0;
+	}
+	
+	.quote_cafe {
+		margin:15px 0 0 0;
+	}
+	
+	.quote_breakfast {
+		margin:15px 0 0 0;
+	}
+	
+	.name {
+		order:1;
+	}
+	.duration_restaurant {
+		order: 2;
+		height:25px;
+	}
+	.duration_dessert {
+		height:25px;
+	}
+	
+	.duration_cafe {
+		height:25px;
+	}
+	
+	.duration_breakfast {
+		height:25px;
+	}
+	
+	.header {
+		flex-wrap:wrap;
+	}
+	
+	.grouped {
+		margin: 0 0 8px 0;
+	}
+}
 		</style>
 	</head>
 	
 	<body>
-    		<div align="center">
-	<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1gh7LYah5ZBZq04zcM33kBDl_O54" width="640" height="480"></iframe>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-	<h1 align=center>Downtown Evanston</h1>
-	<p align=center> Click on the dots to find out more about Cherubs' favorite restaurants, cafes, breakfast spots, dessert shops, and book stores in downtown Evanston. </p>
-</div>
+    		<h1 align=center class="headline">Cherub Food Favorites in Evanston</h1>
+<div align="center" class="map">
+<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1gh7LYah5ZBZq04zcM33kBDl_O54" width="640" height="480">   </iframe> 
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</div> 
+<div>
+ <p align="center" class="blurb"> Cherubs voted for their favorite restaurants, dessert spots, cafes and breakfast places during their time at the institute. These are the results.
+  <div class="category">
+   <h1 align=center class="category_title">Restaurants</h1>
+   <div class="place">
+    <div class="header">
+     <div class="grouped">
+      <div class="circle_restaurant">1</div>
+      <div>
+       <h3 class="name">Joy Yee Noodle</h3>
+      </div>
+     </div>
+     <div class=duration_restaurant>
+      <img src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/iconman-2.png" width="13" height="23">
+      <p class="walk_time">10 min</p>
+     </div>
+    </div>
+    <div class="content">
+     <div class="left2">
+      <p class="description"> When cherubs crave Asian fare, Joy Yee is probably the first restaurant that comes to mind. Not only does Joy Yee serve some of the best Asian dishes in town, but cherubs also flock to Joy Yee for their bubble teas, which come in a variety of innovative
+       flavors, such as Cantaloupe Tapioca Crystal Jelly Freeze. </p>
+      <div class="quote_restaurant">
+       <p class="quote_text">“The service is really, really good. We walked in with 20 people... [and] made it back to class with 15 minutes to spare thanks to those Joy Yee goddesses.” <i>-&nbsp;Lauryn Luescher, San Jose, California</i>
+       </p>
+      </div>
+     </div>
+     <div class="right2">
+      <div class="image">
+       <img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/Screen-Shot-2017-07-25-at-11.39.24-AM.png">
+      </div>
+      <div class="attribution">Photo by Rachel Schonberger</div>
+     </div>
+    </div>
+   </div>
+   <div class="place">
+    <div class="header">
+     <div class="grouped">
+      <div class="circle_restaurant">2</div>
+      <div>
+       <h3 class="name">Edzo’s Burger Shop</h3>
+      </div>
+     </div>
+     <div class=duration_restaurant>
+      <img src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/iconman-2.png" width="13" height="23">
+      <p class="walk_time">13 min</p>
+     </div>
+    </div>
+    <div class="content">
+     <div class="left">
+      <div class="image">
+       <img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/UgarteUSEDBYPrice.jpg">
+      </div>
+	 <div class="attribution">Photo by Allison Ugarte</div>
+     </div>
+     <div class="right">
+      <p class="description"> Cherubs love to visit Edzo’s for affordable, yet tasty meals. Beloved by cherubs for years, Edzo’s serves solid burgers and different kinds of loaded fries, like lobster fries and cheese fries. Their fan-favorite shakes also come in creative flavors
+       such as Michigan cherries, salted caramel, Nutella and Mexican chocolate. </p>
+      <div class="quote_restaurant">
+       <p class="quote_text">“It was pretty solid. Probably the best food I had while here in Evanston. The burgers were really amazing and the fries complimented them so well.” <i> -&nbsp;Matt Chilson, Mocksville, North Carolina </i>
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="place">
+    <div class="header">
+     <div class="grouped">
+      <div class="circle_restaurant">3</div>
+      <div>
+       <h3 class="name">LYFE Kitchen</h3></div>
+     </div>
+     <div class=duration_restaurant>
+      <img src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/iconman-2.png" width="13" height="23">
+      <p class="walk_time">12 min</p>
+     </div>
+    </div>
+    <div class="content">
+     <div class="left2">
+      <p class="description"> LYFE Kitchen specializes in healthy, hearty options for cherubs who appreciate delicious, yet nutritious eats. They revamp American classics, substituting typical ingredients with healthy options like kale and unfried chicken strips. Lyfe Kitchen
+       also offers many gluten-free and vegan options. </p>
+      <div class="quote_restaurant">
+       <p class="quote_text">“It was so good. I got the fish tacos both times. They were really good.” <i>-&nbsp;Kayla Guo, Long Island, New York</i></p>
+      </div>
+     </div>
+     <div class="right2">
+      <div class="image">
+       <img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/PritikinUSEDBYSollenberger.jpg">
+      </div>
+		<div class="attribution">Photo by Anne Pritikin</div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="category">
+   <h1 align=center class="category_title">Desserts </h1>
+   <div class="place">
+    <div class="header">
+     <div class="grouped">
+      <div class="circle_dessert">1</div>
+      <div>
+       <h3 class="name">Andy's Frozen Custard</h3></div>
+     </div>
+     <div class="duration_dessert">
+      <img src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/iconman-2.png" width="13" height="23">
+      <p class="walk_time">10 min</p>
+     </div>
+    </div>
+    <div class="content">
+     <div class="left">
+      <div class="image">
+       <img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/SollenbergerUSEDBYPrice-1025x769.jpg">
+      </div>
+		<div class="attribution">Photo by Emma Sollenberger</div>
+     </div>
+     <div class="right">
+      <p class="description"> No matter the time or day, you can find a cherub enjoying frozen custard at Andy’s. It’s the Cherubs go-to for Saturday late-night bites, one of the perks of studying at Northwestern! Many cherubs prefer Andy’s custard to ice cream because it’s
+       richer and creamier. Alongside classic chocolate and vanilla, Andy’s also serves special flavors such as the Straw-Ana Sundae, Ozark Turtle, and the Triple Chocolate Concrete. </p>
+      <div class="quote_dessert">
+       <p class="quote_text"> “I like Andy’s because it’s a good meeting place where everyone can hang out and get relatively cheap ice cream. I think it tastes better than anything where I live.” <i>-&nbsp;Olivia Cohen, Chapel Hill, North Carolina</i></p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="place">
+    <div class="header">
+     <div class="grouped">
+      <div class="header_number"> </div>
+      <div class="circle_dessert">2</div>
 
-<div class="category">
-	<h1 align=center class="category_title">DESSERTS </h1>
-    <div class="place">
-    	<div class="header">
-			1
-			<h3 class="name">Andy's Frozen Custard</h3>
-		</div>
-		<div class="content">
-			<div class="left">
-				<div class="image">
-					<img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/SollenbergerUSEDBYPrice-1025x769.jpg">
-				</div>
-				<div class="walktime">
-					<p>
-						Walk time: 10 minutes
-					</p>
-				</div>
-			</div>
-			<div class="right">
-				<p class="description"> No matter the time or day, you can find a cherub enjoying frozen custard at Andy’s. It’s the Cherubs go-to for Saturday late-night bites, one of the perks of studying at Northwestern! Many cherubs prefer Andy’s custard to ice cream because it’s richer and creamier. Alongside classic chocolate and vanilla, Andy’s also serves special flavors such as the Straw-Ana Sundae, Ozark Turtle, and the Triple Chocolate Concrete.  </p>
-				<div class="quote">
-					<p class="quote_text"><i> “I like Andy’s because it’s a good meeting place where everyone can hang out and get relatively cheap ice cream. I think it tastes better than anything where I live.” </i>- <b>Olivia Cohen, Chapel Hill, North Carolina</b></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="place">
-    	<div class="header">
-			<div class="header_number">
-				2
-			</div>
-			<h3 class="name">Insomnia Cookies</h3>
-		</div>
-		<div class="content">
-			<div class="left2">
-				<p class="description"> Cherubs love heading to Insomnia before or after check-in, or ordering in for a late night snack. Known for its late night deliveries until 3 am, Insomnia Cookies satisfies any sweet tooth at nearly any time of day. Their menu includes chocolate chip, M&M, snickerdoodle, and peanut butter chip. Cherubs also often opt for a cookiewich, which includes a generous scoop of ice cream sandwiched between two cookies of your choice.  </p>
-				<div class="quote">
-					<p class="quote_text"> <i>“I really like the double chocolate chunk. I like that the cookies are fresh, but I can definitely see that it can be pretty irritating that they take a while to bake and get delivered. I think, overall, if you’re willing to wait, it’s worth it.” </i>- <b>Annie Zavitz, Missoula, Montana</b></p>
-				</div>
-			</div>
-			<div class="right2">
-				<div class="image">
-					<img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/SollenbergerUSEDBYPrice-1025x769.jpg">
-					<div class="walktime">
-					<p>
-						Walk time: 10 minutes
-					</p>
-				</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
+      <div>
+       <h3 class="name">Insomnia Cookies</h3>
+      </div>
+     </div>
+     <div class="duration_dessert">
+      <img src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/iconman-2.png" width="13" height="23">
+      <p class="walk_time">10 min</p>
+     </div>
+    </div>
+    <div class="content">
+     <div class="left2">
+      <p class="description"> Cherubs love heading to Insomnia before or after check-in, or ordering in for a late night snack. Known for its late night deliveries until 3 am, Insomnia Cookies satisfies any sweet tooth at nearly any time of day. Their menu includes chocolate
+       chip, M&M, snickerdoodle, and peanut butter chip. Cherubs also often opt for a cookiewich, which includes a generous scoop of ice cream sandwiched between two cookies of your choice. </p>
+      <div class="quote_dessert">
+       <p class="quote_text">“I really like the double chocolate chunk. I like that the cookies are fresh, but I can definitely see that it can be pretty irritating that they take a while to bake and get delivered. I think, overall, if you’re willing to wait, it’s worth it.”
+        <i>- Annie Zavitz, Missoula, Montana</i></p>
+      </div>
+     </div>
+     <div class="right2">
+      <div class="image">
+       <img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/SiqueiraUSEDBYPrice-2.jpg">
+      </div>
+		<div class="attribution">Photo by Sara Siqueira</div>
+     </div>
+    </div>
+   </div>
+   <div class="place">
+    <div class="header">
+	<div class="grouped">
+     <div class="circle_dessert">3</div>
+     <div>
+		<h3 class="name">Cold Stone Creamery</h3></div> </div>
+     <div class="duration_dessert">
+      <img src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/iconman-2.png" width="13" height="23">
+      <p class="walk_time">13 min</p>
+     </div>
+    </div>
+    <div class="content">
+     <div class="left">
+      <div class="image">
+       <img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/Screen-Shot-2017-07-25-at-11.44.58-AM.png">
+      </div>
+		<div class="attribution">Photo by Danielle Spitz</div>
+     </div>
+     <div class="right">
+      <p class="description"> For those who can’t stand the long line at Andy’s, Cold Stone is the alternative dessert spot. Cherubs can pick from a variety of ice cream and sorbet flavors or create their own flavors with mashable toppings. </p>
+      <div class="quote_dessert">
+       <p class="quote_text">“They seem to be priced fairly, it isn’t too expensive - I particularly enjoy their Oreos.” <i>James Barringer, Arlington, Virginia</i></p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="category">
+   <h1 align=center class="category_title">Cafes</h1>
+   <div class="place">
+    <div class="header">
+	    <div class="grouped">
+     <div class="circle_cafe">1</div>
+     <div>
+		<h3 class="name">Starbucks</h3></div> </div>
+     <div class="duration_cafe">
+      <img src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/iconman-2.png" width="13" height="23">
+      <p class="walk_time">10 min</p>
+     </div>
+    </div>
+    <div class="content">
+     <div class="left2">
+      <p class="description">
+       With a warm ambience, comfy couches, and plenty of tables, cherubs come to Starbucks to work and relax. The large, spacious cafe features murals, book shelves and even a raised lounge area. Cherub instructors meet with students here to enjoy a coffee
+       and chat about current projects. </p>
+      <div class="quote_cafe">
+       <p class="quote_text">“I always like to order a coffee frappuccino there, it really wakes me up. I’ve done some of my stories there in my free time. It’s a friendly atmosphere, there’s always space and seats, and everyone’s super friendly.” <i>-&nbsp;Julia de Petra, Piedmont,
+		California </i></p>
+      </div>
+     </div>
+     <div class="right2">
+      <div class="image">
+       <img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/FullerUSEDBYPrice-1.jpg">
+      </div>
+		<div class="attribution">Photo by Haley Fuller</div>
+     </div>
+    </div>
+   </div>
+   <div class="place">
+    <div class="header">
+	    <div class="grouped">
+     <div class="circle_cafe">2</div>
+     <div>
+		<h3 class="name">Unicorn Cafe</h3></div></div>
+     <div class="duration_cafe">
+      <img src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/iconman-2.png" width="13" height="23">
+      <p class="walk_time">9 min</p>
+     </div>
+    </div>
+    <div class="content">
+     <div class="left">
+      <div class="image">
+       <img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/AlpasanUSEDBYPrice-1.jpg">
+      </div>
+		<div class="attribution">Photo by Eunice Alpasan</div>
+     </div>
+     <div class="right">
+      <p class="description"> Cherubs may meet their instructors at Unicorn Cafe to talk about their work, or simply stop by for a break. Coffee, tea and paninis make this small, home-style cafe a comfortable place for studying and writing. Plus, a bagel with cream cheese and
+       a jumbo cookie will cost you less than five dollars. </p>
+      <div class="quote_cafe">
+       <p class="quote_text">“Unicorn Cafe is so aesthetically pleasing. If there’s one thing I regret from my whole experience at Cherubs, it’s not going to the Unicorn Cafe more often.” <i>-&nbsp;Ananya Panchal, Los Altos, California </i>
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="category">
+   <h1 align=center class="category_title">Breakfast</h1>
+   <div class="place">
+    <div class="header">
+	    <div class="grouped">
+     <div class="circle_breakfast">1</div>
+     <div>
+		<h3 class="name">Cupitol Coffee and Eatery</h3></div></div>
+     <div class="duration_breakfast">
+      <img src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/iconman-2.png" width="13" height="23">
+      <p class="walk_time">15 min</p>
+     </div>
+    </div>
+    <div class="content">
+     <div class="left2">
+      <p class="description">
+       Cupitol is a trendy, modern brunch spot for cherubs who like to dine in style. Cupitol offers nutella waffles, avocado wraps, eggs Benedict, and other classic breakfast staples. It is also known for its artisan coffee and to-go drinks. This brunch spot
+       is highly popular among cherubs who are looking to treat themselves to a fancy brunch on weekend mornings after a long week. </p>
+      <div class="quote_breakfast">
+       <p class="quote_text">“I would definitely recommend it if you’re a breakfast person. The waffles are nice and crunchy but soft in the middle.” <i>-&nbsp;Lauren Katz, Iowa City, Iowa </i></p>
+      </div>
+     </div>
+     <div class="right2">
+      <div class="image">
+       <img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/SiqueiraUSEDBYPrice.jpg">
+      </div>
+		<div class="attribution">Photo by Sara Siqueira</div>
+     </div>
+    </div>
+   </div>
+   <div class="place">
+    <div class="header">
+	    <div class="grouped">
+     <div class="circle_breakfast">2</div>
+     <div>
+		<h3 class="name">Clarke's</h3></div></div>
+     <div class="duration_breakfast">
+      <img src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/iconman-2.png" width="13" height="23">
+      <p class="walk_time">8 min</p>
+     </div>
+    </div>
+    <div class="content">
+     <div class="left">
+      <div class="image">
+       <img class="real_image" src="http://cherubs.medill.northwestern.edu/2017/wp-content/uploads/sites/8/2017/07/PriceUSEDBYSollenberger.jpg">
+      </div>
+		<div class="attribution">Photo by Nina Price</div>
+     </div>
+     <div class="right">
+      <p class="description"> Clarke’s is a quintessential American diner. With glowing neon lights outside, cherubs are often drawn in on weekend mornings and late nights. They serve pancakes, scrambled eggs and omelettes for a classic American breakfast that’s satisfying and
+       affordable. </p>
+      <div class="quote_breakfast">
+       <p class="quote_text">“They have very big portions but I still ordered a lot and ate a lot. The service is really quick, and the waiters are very friendly, so overall, I enjoyed it. And it’s not too expensive for the quantity they give you.” <i>-&nbsp;Alex Reiner, Westport, Connecticut </i>
+
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
 	</body>
 	
 </html>
